@@ -44,7 +44,7 @@
   Example:  
   - `which aircrack-ng`
  
-- ****
+
   Finds all the files in the given directory with the given name
   - Syntax
     - `find <directory> <options> <expression>`
@@ -57,3 +57,5 @@
       - /etc/default/apache2
     - `find /etc -type f -name apache2.\*`
         - /etc/apache2/apache2.conf
+
+---
