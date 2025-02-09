@@ -25,13 +25,14 @@
 
 ---
 
-## Finding Binary Files
+## Finding Files
 
 - **`locate <file-name>`**  
   Finds all occurrences of the file in the file system using a database.  
   *Note: The database is updated once a day, and the results may include too many occurrences.*  
   Example:  
-  - `locate aircrack-ng`  
+  - `locate aircrack-ng`
+ 
 
 - **`whereis <command>`**  
   Shows the location of the binary file, its source, and its manual page.  
@@ -42,3 +43,17 @@
   Shows the exact path to the binary file by checking the system’s environment variables.  
   Example:  
   - `which aircrack-ng`
+ 
+- ****
+  Finds all the files in the given directory with the given name
+  - Syntax
+    - `find <directory> <options> <expression>`
+
+  - Example
+    - `find /etc -type f -name apache2`
+      - /etc/init.d/apache2
+      - /etc/logrotate.d/apache2
+      - /etc/cron.daily/apache2
+      - /etc/default/apache2
+    - `find /etc -type f -name apache2.\*`
+        - /etc/apache2/apache2.conf
