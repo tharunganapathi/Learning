@@ -2,10 +2,10 @@
 
 
 ## list commands
-**ls **    =  list all files in the directory
+**ls**    =  list all files in the directory
 **ls -a**  =  list all the hidden files in the directory
 **ls -l**(long)  =  list files with long information like the permission, owner, date, etc...
-**ls -a -l** (or) l**s -al** both supported as well.
+**ls -a -l** (or) **ls -al** both supported as well.
 
 
 ## help
