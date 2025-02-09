@@ -1,25 +1,44 @@
-# linux
+# Linux Commands
 
+## List Files in a Directory
+- **`ls`**  
+  Lists all files in the current directory.
 
-## list commands
-**ls**    =  list all files in the directory
-**ls -a**  =  list all the hidden files in the directory
-**ls -l**(long)  =  list files with long information like the permission, owner, date, etc...
-**ls -a -l** (or) **ls -al** both supported as well.
+- **`ls -a`**  
+  Lists all files, including hidden files (those starting with a dot `.`).
 
+- **`ls -l`**  
+  Lists files with detailed information like permissions, owner, size, and modification date.
 
-## help
-**--help** (or) **(-h)** or **(-?)** - Some application supports all the three params. Some application supports only some. 
-                           So one doesn't work, try another.
-                           eg: aircrack-ng --help  (or) nmap -h
+- **`ls -a -l`** or **`ls -al`**  
+  Lists all files (including hidden ones) with detailed information.
 
-## find the binary file.
-**locate aircrack-ng**  =  Gives all the occurances in the file system from the DATABASE collection.
-                       Drawback.
-                           - DATABASE is updated once in a day.
-                           - Returns all possbile occurances which has too many information.
+---
 
+## Help Commands
+- **`--help`** or **`-h`** or **`-?`**  
+  Use this option with a command to get help about the command’s usage and available options.  
+  *Note: Not all commands support all three variations, so if one doesn’t work, try the others.*  
+  Example:
+  - `aircrack-ng --help`  
+  - `nmap -h`
 
-**whereis aircrack-ng**  = Gives the binary file location, also its source and manual page location.
-**which aircrack-ng** = Gives the exact binary file location alone. Actually it gets the path from env variable instead.
-                      
+---
+
+## Finding Binary Files
+
+- **`locate <file-name>`**  
+  Finds all occurrences of the file in the file system using a database.  
+  *Note: The database is updated once a day, and the results may include too many occurrences.*  
+  Example:  
+  - `locate aircrack-ng`  
+
+- **`whereis <command>`**  
+  Shows the location of the binary file, its source, and its manual page.  
+  Example:  
+  - `whereis aircrack-ng`
+
+- **`which <command>`**  
+  Shows the exact path to the binary file by checking the system’s environment variables.  
+  Example:  
+  - `which aircrack-ng`
