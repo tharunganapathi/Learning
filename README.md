@@ -44,8 +44,8 @@
   Example:  
   - `which aircrack-ng`
  
-- **`find <commands>`**
-  Finds all the files in the given directory with the given name
+- **`find <commands>`**  
+  Finds all the files in the given directory with the given name.
   - Syntax
     - `find <directory> <options> <expression>`
 
