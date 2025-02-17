@@ -27,24 +27,24 @@
 
 ## Finding Files
 
-- **`locate <file-name>`**  
+- ### **`locate <file-name>`**  
   Finds all occurrences of the file in the file system using a database.  
   *Note: The database is updated once a day, and the results may include too many occurrences.*  
   Example:  
   - `locate aircrack-ng`
  
 
-- **`whereis <command>`**  
+- ### **`whereis <command>`**  
   Shows the location of the binary file, its source, and its manual page.  
   Example:  
   - `whereis aircrack-ng`
 
-- **`which <command>`**  
+- ### **`which <command>`**  
   Shows the exact path to the binary file by checking the system’s environment variables.  
   Example:  
   - `which aircrack-ng`
  
-- **`find <commands>`**  
+- ### **`find <commands>`**  
   Finds all the files in the given directory with the given name.
   - Syntax
     - `find <directory> <options> <expression>`
